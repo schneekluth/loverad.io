@@ -1,4 +1,13 @@
 # Loverad.io
+Dieses Repository enthält die Playlisten vom **06.07.2022** der folgenden 6 Radiosender:
++ 90s90s
++ Barbaradio
++ Radio Bob
++ Delta Radio
++ RSH
+
+# API
+Alle gelisteten Senderdaten werden von einem Drupal Backend der Firma [Regiocast](https://www.regiocast.de/services/) öffentlich bereitgestellt. Dafür werden senderspezifische URLs verwendet.
 
 ## URLs
 URL-Schema am Beispiel Delta Radio:
@@ -6,7 +15,8 @@ URL-Schema am Beispiel Delta Radio:
 https://iris-delta.loverad.io/search.json?station=3&=start=2022-07-06T00%3A00%3A00%2B02%3A00&end=2022-07-06T23%3A59%3A59%2B02%3A00
 ```
 
-Start und Endzeitraum müssen encodiert werden, bspw. mit [URL-Encoder](https://www.urlencoder.org/). Eingabeformat: `2022-07-06T23:59:59+02:00`
+Start und Endzeitraum müssen encodiert werden, bspw. mit [URL-Encoder](https://www.urlencoder.org/). 
+Eingabeformat für den Encoder: `2022-07-06T23:59:59+02:00`
 
 ### Sender
 Sender mit Loverad.io Backend sind [hier](https://www.regiocast.de/unternehmen/) gelistet.
