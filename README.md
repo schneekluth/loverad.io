@@ -29,8 +29,8 @@ Eingabeformat für den Encoder: `2022-07-06T23:59:59+02:00`
 ### Sender
 Sender mit Loverad.io Backend sind [hier](https://www.regiocast.de/unternehmen/) gelistet.
 
-### Api für Playlist
-Im folgenden 6 Beispiele, samt URLs zur API:
+### API für Playlist
+Im folgenden 6 Beispiele, samt URLs zur API mit Start- und Endzeitpunkt 06.07.2022:
 
 | Sender        | Link zur Playlist-API                                                                                                                             |
 |-------------- |-------------------------------------------------------------------------------------------------------------------------------------------------- |
