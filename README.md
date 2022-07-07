@@ -1,13 +1,21 @@
 # Loverad.io
-Dieses Repository enthält die Playlisten vom **06.07.2022** der folgenden 6 Radiosender:
+Dieses Repository enthält die Playlisten vom **06.07.2022** der folgenden 6 Radiosender (JSON + CSV):
 + 90s90s
 + Barbaradio
 + Radio Bob
 + Delta Radio
 + RSH
 
-# API
-Alle gelisteten Senderdaten werden von einem Drupal Backend der Firma [Regiocast](https://www.regiocast.de/services/) öffentlich bereitgestellt. Dafür werden senderspezifische URLs verwendet.
+Zusätzlich liegen 2 Pyhton Skripte bei:
++ `00_SongsAndMusictime.py`: Listet die Gesamtzahl aller gespielten Songs, deren Gesamtdauer und einen prozentualen Wert der Musikbeiträge für den Zeitraum eines Tags auf.
++ `01_JSON2CSV.py`: Wandelt Werte aus den JSON Dateien in eine CSV um, die in Excel oder Libreoffice importiert werden kann. Die exportieren Werte sind:
+  + `guid` - Identifier des Songs (über alle Sender identisch)
+  + `airtime` - Wann wurde der Song gespielt
+  + `artist` - Welcher Künstler wurde gespielt
+  + `track` - Welcher Track wurde gespielt
+
+# Loverad.io API
+Alle gelisteten Senderdaten werden von einem Drupal Backend der Firma [Regiocast](https://www.regiocast.de/services/) öffentlich bereitgestellt. Dafür werden senderspezifische Subdomains verwendet.
 
 ## URLs
 URL-Schema am Beispiel Delta Radio:
