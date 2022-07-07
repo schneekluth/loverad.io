@@ -1,6 +1,5 @@
 import json
 import csv
-from prettytable import PrettyTable
 
 files = [
     {
@@ -11,7 +10,7 @@ files = [
         "path": "./bob_2022-07-06.json"
     },{
         "name": "delta",
-        "path": "./deltaradio_2022-07-06.json"
+        "path": "./delta_2022-07-06.json"
     },{
         "name": "psr",
         "path": "./psr_2022-07-06.json"
@@ -30,7 +29,7 @@ for file in files:
     f.close
 
     station = file['name']
-    header = ['GUID', 'AIRTIME', 'ARTIST', 'TRACK']
+    header = ['GUID', 'ARTIST', 'TRACK', 'AIRTIME']
 
     with open(f"{station}_2022-07-06.csv", 'w', encoding='UTF8') as fi:
         writer = csv.writer(fi)

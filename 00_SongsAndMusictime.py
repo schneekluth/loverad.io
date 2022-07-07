@@ -10,7 +10,7 @@ files = [
         "path": "./bob_2022-07-06.json"
     },{
         "name": "delta",
-        "path": "./deltaradio_2022-07-06.json"
+        "path": "./delta_2022-07-06.json"
     },{
         "name": "psr",
         "path": "./psr_2022-07-06.json"
