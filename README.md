@@ -42,7 +42,7 @@ Im folgenden 6 Beispiele, samt URLs zur API mit Start- und Endzeitpunkt 06.07.20
 | Barbaradio    | [klick](https://iris-barbaradio.loverad.io/search.json?station=278&start=2022-07-06T00%3A00%3A00%2B02%3A00&end=2022-07-06T23%3A59%3A59%2B02%3A00) |
 
 **Achtung:**  
-Die API wirft bei suchen über längere Zeiträume nicht valides JSON zurück. Sieht Doppelkomma und Doppeleintrag für `"airtime"`:
+Die API wirft bei suchen über längere Zeiträume nicht valides JSON zurück. Siehe Doppelkomma und Doppeleintrag für `"airtime"`:
 ```
 {"airtime":"2022-07-06T21:52:53+02:00","duration":"193",,{"airtime":"2022-07-06T21:49:04+02:00","duration":"232",
     "song": {
