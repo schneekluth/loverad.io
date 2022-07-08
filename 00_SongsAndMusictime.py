@@ -24,7 +24,7 @@ files = [
 ]
 
 x = PrettyTable()
-x.field_names = ["Sender", "Songs pro Tag", "Musikzeit [h]", "Tagesanteil Musik [%]"]
+x.field_names = ["Sender", "Songs pro Tag", "Musikzeit [h]", "Tagesanteil Musik [%]", "∅ Songlänge [min]"]
 
 for file in files:
     f = open(file['path'])
@@ -40,7 +40,8 @@ for file in files:
 
     musicHours = round(duration/3600, 2)
     musicPerDayPercent = round(musicHours/24*100, 2)
+    averageSongLenght = musicHours*60/songsPerDay
 
-    x.add_row([station, songsPerDay, "{:.2f}".format(musicHours), "{:.2f}".format(musicPerDayPercent)] )
+    x.add_row([station, songsPerDay, "{:.2f}".format(musicHours), "{:.2f}".format(musicPerDayPercent), "{:.2f}".format(averageSongLenght)] )
 
 print(x)
